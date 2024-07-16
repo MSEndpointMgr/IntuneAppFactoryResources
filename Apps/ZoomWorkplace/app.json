@@ -1,0 +1,37 @@
+{
+    "PackageInformation": {
+        "SetupType": "MSI",
+        "SetupFile": "Deploy-Application.exe",
+        "SourceFolder": "Source",
+        "OutputFolder": "Package",
+        "IconFile": "Icon.png"
+    },
+    "Information": {
+        "DisplayName": "<replaced_by_pipeline>",
+        "AppVersion": "<replaced_by_pipeline>",
+        "Description": "Zoom bietet Remote-Konferenzdienste mithilfe von Cloud-Computing an. Zoom bietet Kommunikationssoftware, die Videokonferenzen, Online-Besprechungen, Chat und mobile Zusammenarbeit kombiniert.",
+        "Publisher": "<replaced_by_pipeline>",
+        "Notes": "",
+        "Owner": "Intune AppFactory"
+    },
+    "Program": {
+        "InstallCommand": "Deploy-Application.exe -DeploymentType \"Install\" -DeployMode \"Silent\"",
+        "UninstallCommand": "Deploy-Application.exe -DeploymentType \"Uninstall\" -DeployMode \"Silent\"",
+        "InstallExperience": "system",
+        "DeviceRestartBehavior": "suppress"
+    },
+    "RequirementRule": {
+        "MinimumSupportedWindowsRelease": "W10_21H2",
+        "Architecture": "x64"
+    },
+    "CustomRequirementRule": [
+    ],
+    "DetectionRule": [
+        {
+            "Type": "MSI",
+            "ProductCode": "<replaced_by_pipeline>",
+            "ProductVersionOperator": "notConfigured",
+            "ProductVersion": "<replaced_by_pipeline>"
+        }
+    ]
+}
