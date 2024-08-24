@@ -1,0 +1,20 @@
+{
+    "Apps": [
+                {
+            "IntuneAppName": "Zoom Workplace",
+            "AppPublisher": "Zoom",
+            "AppSource": "Evergreen",
+            "AppID": "Zoom",
+            "AppFolderName": "ZoomWorkplace",
+            "AppSetupFileName": "ZoomInstallerFull.msi",
+            "FilterOptions": [
+                {
+                    "Architecture": "x64",
+                    "Type": "msi",
+                    "Platform": "Desktop",
+                    "Installer": "Admin"
+                }
+            ]
+        }
+    ]
+}
