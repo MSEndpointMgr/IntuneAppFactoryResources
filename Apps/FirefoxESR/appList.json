@@ -1,0 +1,15 @@
+{
+    "IntuneAppName": "Mozilla Firefox ESR",
+    "IntuneAppNamingConvention": "AppName",
+    "AppPublisher": "Mozilla",
+    "AppSource": "Evergreen",
+    "AppID": "MozillaFirefox",
+    "AppFolderName": "FireFox",
+    "FilterOptions": [
+        {
+            "Architecture": "x64",
+            "Type": "exe",
+            "Channel": "Extended Support"
+        }
+    ]
+}

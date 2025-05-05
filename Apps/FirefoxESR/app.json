@@ -1,0 +1,60 @@
+{
+    "PackageInformation": {
+        "SetupType": "EXE",
+        "SetupFile": "Deploy-Application.exe",
+        "SourceFolder": "Source",
+        "OutputFolder": "Package",
+        "IconFile": "Icon.png",
+        "IconURL": ""
+    },
+    "Information": {
+        "DisplayName": "<replaced_by_pipeline>",
+        "AppVersion": "<replaced_by_pipeline>",
+        "Description": "Firefox Extended Support Release (ESR) is an official version of Firefox developed for large organizations like universities and businesses that need to set up and maintain Firefox on a large scale.",
+        "Publisher": "<replaced_by_pipeline>",
+        "Notes": "",
+        "Owner": "",
+        "ScopeTagName": "Default"
+    },
+    "Program": {
+        "InstallCommand": "Deploy-Application.exe Install",
+        "UninstallCommand": "Deploy-Application.exe Uninstall",
+        "InstallExperience": "system",
+        "DeviceRestartBehavior": "suppress"
+    },
+    "RequirementRule": {
+        "MinimumSupportedWindowsRelease": "W10_22H2",
+        "Architecture": "x64"
+    },
+    "CustomRequirementRule": [
+    ],
+    "DetectionRule": [
+        {
+            "Type": "File",
+            "DetectionMethod": "Existence",
+            "Path": "C:\\Program Files\\Mozilla Firefox",
+            "FileOrFolder": "firefox.exe",
+            "Check32BitOn64System": "false",
+            "DetectionType": "exists"
+        }
+    ],
+    "Assignment": [
+        {
+            "Type": "Group",
+            "GroupID": "your_group_id",
+            "Intent": "available",
+            "GroupMode": "include",
+            "Notification": "showAll",
+            "UseLocalTime": true,
+            "FilterName": "",
+            "FilterMode": "",
+            "AvailableTime": "",
+            "DeadlineTime": "",
+            "DeliveryOptimizationPriority": "",
+            "EnableRestartGracePeriod": "",
+            "RestartGracePeriodInMinutes": "",
+            "RestartCountDownDisplayInMinutes": "",
+            "RestartNotificationSnoozeInMinutes": ""
+        }
+    ]
+}
